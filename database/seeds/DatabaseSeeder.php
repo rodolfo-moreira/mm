@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
-use App\User as User;
+use App\UserMaiorum as UserMaiorum;
 
 class DatabaseSeeder extends Seeder {
 
@@ -13,10 +13,12 @@ class DatabaseSeeder extends Seeder {
 	 */
 	public function run()
 	{
-		User::create([
+		UserMaiorum::create([
 			'name' => 'Rodolfo Moreira',
 			'email' => 'rodolformoreira@gmail.com',
-			'password' => Hash::make('123456')
+			'telephone' => '11 2773-6650',
+			'cellphone' => '11 95578-4295',
+			'id_login' => 2
 			//'password' => 'xbJQAB26z61LBc2AxwbqXA=='
 		]);
 	}
